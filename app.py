@@ -8,7 +8,7 @@ app=Flask(__name__)
 def home():
     return "Welcome to prediction"
 
-@app.route("/POST",methods=["POST"])
+@app.route("/predict",methods=["POST"])
 def predict():
     data=request.get_json()
     try:
